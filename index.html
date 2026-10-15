@@ -2,191 +2,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Marlon Ramos | Portfolio</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f1f5f9;
-            color: #1e293b;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #0f172a;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            margin-top: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 12px;
-        }
-
-        nav a:hover {
-            color: #60a5fa;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #1e3a8a, #2563eb);
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        .profile {
-            width: 120px;
-            height: 120px;
-            background-color: white;
-            color: #2563eb;
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 35px;
-            font-weight: bold;
-            border: 4px solid #bfdbfe;
-        }
-
-        .hero h1 {
-            font-size: 38px;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 18px;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: white;
-            color: #1d4ed8;
-            padding: 10px 22px;
-            margin-top: 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .btn:hover {
-            background-color: #dbeafe;
-        }
-
-        section {
-            max-width: 850px;
-            margin: 30px auto;
-            padding: 30px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        }
-
-        section h2 {
-            color: #1d4ed8;
-            margin-bottom: 15px;
-        }
-
-        .info {
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #0f172a;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 28px;
-            }
-
-            nav a {
-                margin: 0 6px;
-                font-size: 14px;
-            }
-
-            section {
-                margin: 20px 12px;
-                padding: 22px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marlon Ramos | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h2>Marlon Ramos</h2>
+<header>
+  <a class="logo" href="#home">Marlon <span>Ramos</span></a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-        </nav>
-    </header>
+<section class="hero" id="home">
+  <div class="intro">
+    <p class="tag">BSIT STUDENT PORTFOLIO</p>
+    <p>Hello, I'm</p>
+    <h1>Marlon <span>Ramos</span></h1>
+    <h2>Bachelor of Science in Information Technology</h2>
+    <h3>🎓 Bulacan Agricultural State College</h3>
+    <p>
+      I am a BSIT student passionate about technology,
+      web development, and building digital solutions
+      for a better future.
+    </p>
+    <a class="btn" href="#projects">View My Projects</a>
+    <a class="btn outline" href="#contact">Contact Me</a>
+  </div>
 
-    <div class="hero" id="home">
-        <div class="profile">MR</div>
-
-        <h1>Hi, I'm Marlon Ramos</h1>
-
-        <p>BSIT Student | Aspiring IT Professional</p>
-
-        <a href="#about" class="btn">Learn More About Me</a>
+  <div class="logo-area">
+    <div class="circle-logo">
+      <span>M</span><span>R</span>
     </div>
+    <p>Learn<br>Build<br>Grow</p>
+  </div>
+</section>
 
-    <section id="about">
-        <h2>About Me</h2>
+<section class="light-section" id="about">
+  <h2>About <span>Me</span></h2>
+  <p>
+    My name is Marlon Ramos, a BSIT student at Bulacan
+    Agricultural State College. I enjoy learning new
+    technologies, solving problems, and creating useful
+    web applications. I am committed to improving my
+    skills and becoming a successful IT professional.
+  </p>
 
-        <p>
-            Hello! My name is Marlon Ramos. I am a Bachelor of
-            Science in Information Technology (BSIT) student
-            at Bulacan Agricultural State College. I am interested
-            in technology, web development, and learning new
-            computer skills.
-        </p>
-    </section>
+  <div class="cards">
+    <article class="card">
+      <h3>💻 Web Development</h3>
+      <p>HTML, CSS, JavaScript</p>
+    </article>
+    <article class="card">
+      <h3>⚙ Problem Solving</h3>
+      <p>Critical thinking and creativity</p>
+    </article>
+    <article class="card">
+      <h3>📚 Continuous Learning</h3>
+      <p>Always open to learning new skills</p>
+    </article>
+  </div>
+</section>
 
-    <section id="education">
-        <h2>Education</h2>
+<section class="dark-section" id="skills">
+  <h2>My <span>Skills</span></h2>
+  <div class="skills">
+    <div class="skill"><h3>HTML</h3><div class="bar"><span style="width:85%"></span></div></div>
+    <div class="skill"><h3>CSS</h3><div class="bar"><span style="width:80%"></span></div></div>
+    <div class="skill"><h3>JavaScript</h3><div class="bar"><span style="width:65%"></span></div></div>
+    <div class="skill"><h3>PHP</h3><div class="bar"><span style="width:60%"></span></div></div>
+    <div class="skill"><h3>MySQL</h3><div class="bar"><span style="width:55%"></span></div></div>
+    <div class="skill"><h3>Git & GitHub</h3><div class="bar"><span style="width:65%"></span></div></div>
+    <div class="skill"><h3>VS Code</h3><div class="bar"><span style="width:85%"></span></div></div>
+  </div>
+  <p class="note">Sample skill levels — adjust these to match your actual experience.</p>
+</section>
 
-        <p class="info">
-            <strong>School:</strong>
-            Bulacan Agricultural State College
-        </p>
+<section class="light-section" id="education">
+  <h2>Education</h2>
+  <div class="card">
+    <h3>Bulacan Agricultural State College</h3>
+    <p>Bachelor of Science in Information Technology (BSIT)</p>
+  </div>
+</section>
 
-        <p class="info">
-            <strong>Course:</strong>
-            Bachelor of Science in Information Technology (BSIT)
-        </p>
+<section class="light-section" id="projects">
+  <h2>Featured <span>Projects</span></h2>
+  <div class="cards">
+    <article class="card">
+      <h3>Personal Portfolio Website</h3>
+      <p>A responsive website introducing my background and skills.</p>
+    </article>
+    <article class="card">
+      <h3>E-Commerce System</h3>
+      <p>A sample online store with product listings and shopping features.</p>
+    </article>
+    <article class="card">
+      <h3>Student Management System</h3>
+      <p>A sample system for managing student information.</p>
+    </article>
+  </div>
+</section>
 
-        <p class="info">
-            <strong>Student Name:</strong> Marlon Ramos
-        </p>
-    </section>
+<section class="contact" id="contact">
+  <h2>Get in Touch</h2>
+  <p>Feel free to contact me about projects or collaboration.</p>
+  <p>Email: marlonramos@email.com</p>
+  <p>Location: Bulacan, Philippines</p>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Marlon Ramos | Personal Portfolio</p>
-    </footer>
+<footer>
+  <p>© 2026 Marlon Ramos | BSIT Student | Bulacan Agricultural State College</p>
+</footer>
 
 </body>
 </html>
